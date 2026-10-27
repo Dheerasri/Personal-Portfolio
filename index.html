@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alex Thorne — Multi-Disciplinary Architect & Spatial Technologist</title>
+  <meta name="description" content="Portfolio of Alex Thorne: Exploring physical architecture, socio-spatial systems, endurance running diagnostics, and interactive web development experiments.">
+  
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/components.css">
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>▲</text></svg>">
+</head>
+<body>
+
+  <!-- Site Navigation Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#" class="brand-link">
+        <span class="brand-monogram">AT // LAB</span>
+        <span class="brand-name">Alex Thorne</span>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="nav-desktop" id="main-nav">
+        <a href="#works" class="nav-link">01. Works</a>
+        <a href="#intersection" class="nav-link">02. The Intersection</a>
+        <a href="#lab" class="nav-link">03. Digital Lab</a>
+        <a href="#human-dimension" class="nav-link">04. Human Dimension</a>
+        <a href="#" data-open-resume class="nav-link">05. Index / CV</a>
+      </nav>
+
+      <!-- Header Actions -->
+      <div class="header-actions">
+        <button id="theme-toggle" class="btn-theme-toggle" aria-label="Toggle Theme">
+          ☾ Dark Blueprint
+        </button>
+        <button data-open-contact class="btn-header-contact">
+          Initiate Contact ↗
+        </button>
+        <button id="mobile-menu-toggle" class="mobile-menu-btn" aria-label="Toggle Menu">
+          ☰
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Editorial Section -->
+    <section class="hero-section">
+      <div class="container">
+        <div class="hero-lead-row">
+          <span>SPATIAL PRACTICE & COMPUTATIONAL LAB // ED. 2026</span>
+          <span class="hero-status-pill" id="hero-status">
+            <span class="pulse-dot"></span> Open for architectural commissions & research
+          </span>
+        </div>
+
+        <h1 class="hero-title">
+          Investigating the thresholds between <em>physical architecture</em>, socio-spatial systems, bodily endurance, and the <em>computational medium</em>.
+        </h1>
+
+        <p class="hero-subtitle" id="hero-subtitle">
+          Trained as an architect. Running 40km through metropolises to map invisible urban flows. Prototyping interactive browser tools to interrogate structural logic. Translating vision into built reality through human empathy and cross-disciplinary leadership.
+        </p>
+
+        <div style="display: flex; gap: 1rem; flex-wrap: wrap; margin-bottom: 3.5rem;">
+          <a href="#works" class="btn-primary">Examine Curated Works ↓</a>
+          <a href="#lab" class="btn-secondary">Test Live Code Lab ↗</a>
+        </div>
+
+        <!-- Metric Summary Row -->
+        <div class="hero-stats-row" id="hero-stats-row">
+          <!-- Rendered dynamically from data.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- 01. Curated Architecture & Spatial Systems Works -->
+    <section class="section-block" id="works">
+      <div class="container">
+        <div class="section-header-editorial">
+          <div>
+            <span class="section-badge">01 // CURATED MONOGRAPHS</span>
+            <h2 class="section-title">Architecture & Spatial Systems</h2>
+          </div>
+          <div>
+            <p class="section-tagline">
+              Built structures, civic housing typologies, and adaptive reuse interrogating public porosity and decarbonized materiality.
+            </p>
+            <div class="filter-tabs">
+              <button class="filter-btn active" data-filter="all">All Works</button>
+              <button class="filter-btn" data-filter="architecture">Architecture</button>
+              <button class="filter-btn" data-filter="spatial">Spatial Systems</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dynamic Grid of Project Cards -->
+        <div class="projects-grid" id="projects-grid">
+          <!-- Rendered by app.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- 02. The Intersection: Running, Spatial Systems & Bodily Movement -->
+    <section class="section-block" id="intersection">
+      <div class="container">
+        <div class="section-header-editorial">
+          <div>
+            <span class="section-badge">02 // THE INTERCONNECTION</span>
+            <h2 class="section-title">Movement, City & Body</h2>
+          </div>
+          <p class="section-tagline">
+            Long-distance endurance running as an empirical instrument of spatial diagnostics, bodily cadence, and psychological fortitude.
+          </p>
+        </div>
+
+        <div class="intersection-wrap">
+          <!-- Manifesto Block -->
+          <div class="manifesto-box">
+            <span class="manifesto-quote-mark">“</span>
+            <p class="manifesto-body" id="manifesto-text">
+              <!-- Rendered from data.js -->
+            </p>
+          </div>
+
+          <!-- 4 Pillars Grid -->
+          <div class="pillars-grid" id="inter-pillars-grid">
+            <!-- Rendered from data.js -->
+          </div>
+
+          <!-- Interactive Kinesthetic Urban Flow Simulator -->
+          <div class="sim-container" id="running-canvas-container">
+            <div class="sim-header-row">
+              <div>
+                <span class="section-badge" style="margin-bottom: 0.25rem;">LIVE SPATIAL CADENCE SIMULATOR</span>
+                <h3 style="font-family: var(--font-serif); font-size: 1.4rem;" id="sim-route-name">Berlin Wall Trail: The Void & Memory</h3>
+              </div>
+
+              <!-- Route Selectors -->
+              <div class="sim-route-selector">
+                <button class="route-pill-btn active" data-route-btn="0">01. Berlin Trail (21.1 km)</button>
+                <button class="route-pill-btn" data-route-btn="1">02. Thames Barrier (32.4 km)</button>
+                <button class="route-pill-btn" data-route-btn="2">03. Rotterdam Bridges (16.8 km)</button>
+                <button id="run-sim-toggle" class="btn-copy" style="margin-left: 0.5rem;">⏸ Pause Run</button>
+              </div>
+            </div>
+
+            <!-- Real-Time Biometric & Spatial HUD -->
+            <div class="sim-hud-row">
+              <div class="hud-item">
+                <span class="hud-label">Route Distance</span>
+                <span class="hud-value" id="sim-route-dist">21.1 km</span>
+              </div>
+              <div class="hud-item">
+                <span class="hud-label">Elevation Gain</span>
+                <span class="hud-value" id="hud-elev">+34m</span>
+              </div>
+              <div class="hud-item">
+                <span class="hud-label">Cadence (SPM)</span>
+                <span class="hud-value" id="hud-spm">180 SPM</span>
+              </div>
+              <div class="hud-item">
+                <span class="hud-label">Urban Density</span>
+                <span class="hud-value" id="hud-density">62%</span>
+              </div>
+            </div>
+
+            <!-- Interactive Canvas -->
+            <div class="running-canvas-wrap">
+              <canvas id="running-canvas"></canvas>
+            </div>
+
+            <div class="sim-spatial-note" id="sim-route-note">
+              "Tracing the former death strip reveals how modern urban fabric slowly stitches trauma into linear public parks."
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 03. Digital Lab & Web Development Experiments -->
+    <section class="section-block" id="lab">
+      <div class="container">
+        <div class="section-header-editorial">
+          <div>
+            <span class="section-badge">03 // COMPUTATIONAL MEDIUM</span>
+            <h2 class="section-title">Digital Lab & Browser Experiments</h2>
+          </div>
+          <p class="section-tagline">
+            Prototyping spatial concepts through interactive code. Tested across major browser engines with open source code hosted on GitHub.
+          </p>
+        </div>
+
+        <div class="lab-layout">
+          <!-- Experiments Sidebar List -->
+          <div class="lab-sidebar" id="lab-experiment-list">
+            <!-- Rendered by code-lab.js -->
+          </div>
+
+          <!-- Main Interactive Sandbox Area -->
+          <div class="lab-main-view">
+            <div class="lab-view-header">
+              <div class="lab-view-meta">
+                <h3 id="lab-active-title">Parametric Facade & Shadow Synthesizer</h3>
+                <p id="lab-active-desc">Real-time solar path and louver shadow generator calculating daylight penetration.</p>
+                <div class="lab-tags-row" id="lab-active-tags"></div>
+              </div>
+
+              <!-- Switch between Live Tool and Source Code -->
+              <div class="lab-action-tabs">
+                <button class="lab-tab-btn active" id="lab-tab-preview">▶ Live Sandbox</button>
+                <button class="lab-tab-btn" id="lab-tab-code">&lt;/&gt; View Source Code</button>
+              </div>
+            </div>
+
+            <!-- Tab 1: Live Interactive Runner -->
+            <div id="lab-preview-view" class="lab-interactive-view">
+              <div id="lab-sandbox-mount">
+                <!-- Mounted dynamically -->
+              </div>
+            </div>
+
+            <!-- Tab 2: Source Code Inspector -->
+            <div id="lab-code-view" class="lab-code-container hidden">
+              <div class="code-header-bar">
+                <span class="code-filename">// experiment-kernel.js (ES6 Browser Compatible)</span>
+                <button id="lab-copy-code-btn" class="btn-copy">Copy Source Code</button>
+              </div>
+              <pre class="code-pre-box"><code id="lab-code-display"></code></pre>
+            </div>
+
+            <!-- Lab Footer Bar with GitHub Link -->
+            <div class="lab-footer-bar">
+              <a href="https://github.com" target="_blank" rel="noopener" id="lab-github-link" class="github-link-btn">
+                <span>View Repository on GitHub ↗</span>
+              </a>
+              <span style="font-family: var(--font-mono); font-size: 0.72rem; color: var(--text-muted);">
+                Verified for Chrome, Firefox, Safari, Edge
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 04. Soft Skills & Human Dimension -->
+    <section class="section-block" id="human-dimension">
+      <div class="container">
+        <div class="section-header-editorial">
+          <div>
+            <span class="section-badge">04 // THE HUMAN DIMENSION</span>
+            <h2 class="section-title">Leadership & Soft Skills Development</h2>
+          </div>
+          <p class="section-tagline">
+            Architecture and systems succeed through human consensus, stakeholder empathy, and cross-disciplinary translation.
+          </p>
+        </div>
+
+        <div class="soft-skills-grid" id="soft-skills-grid">
+          <!-- Rendered by app.js -->
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-main-row">
+        <div class="footer-col-headline">
+          <h3>Let's shape physical & digital spaces together.</h3>
+          <p>Available for architectural design commissions, urban research fellowships, and creative technology advisory.</p>
+          <div style="margin-top: 1.5rem; display: flex; gap: 1rem;">
+            <button data-open-contact class="btn-primary">Initiate Dialogue →</button>
+            <button data-open-resume class="btn-secondary">Download / View CV</button>
+          </div>
+        </div>
+
+        <div class="footer-col-nav">
+          <h4>Navigation</h4>
+          <ul class="footer-nav-list">
+            <li><a href="#works">01. Selected Works</a></li>
+            <li><a href="#intersection">02. Running & Spatial Systems</a></li>
+            <li><a href="#lab">03. Digital Lab & Code</a></li>
+            <li><a href="#human-dimension">04. Soft Skills & Leadership</a></li>
+            <li><a href="#" data-open-resume>05. Comprehensive CV</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col-contact">
+          <h4>Studio & Network</h4>
+          <ul class="footer-nav-list">
+            <li><a href="https://github.com" target="_blank" rel="noopener">GitHub ↗</a></li>
+            <li><a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn ↗</a></li>
+            <li><a href="https://strava.com" target="_blank" rel="noopener">Strava Athletics ↗</a></li>
+            <li><a href="https://instagram.com" target="_blank" rel="noopener">Instagram Studio ↗</a></li>
+            <li><span style="font-family: var(--font-mono); font-size: 0.78rem;">alex.thorne.spatial@gmail.com</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom-row">
+        <span>© 2026 ALEX THORNE. DESIGNED WITH EDITORIAL RIGOR.</span>
+        <span>LAT: 51°30'26"N // LON: 0°07'39"W</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Global Modal Overlay Container -->
+  <div id="global-modal-overlay" class="modal-overlay hidden" role="dialog" aria-modal="true">
+    <div class="modal-window">
+      <button id="global-modal-close" class="modal-close-btn" aria-label="Close Modal">✕</button>
+      <div id="global-modal-content"></div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/data.js"></script>
+  <script src="js/running-canvas.js"></script>
+  <script src="js/code-lab.js"></script>
+  <script src="js/modal.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

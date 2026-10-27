@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="earth-layers" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ccb59d"/>
+      <stop offset="20%" stop-color="#bd9f83"/>
+      <stop offset="40%" stop-color="#cca78b"/>
+      <stop offset="60%" stop-color="#ad896d"/>
+      <stop offset="80%" stop-color="#c4a58b"/>
+      <stop offset="100%" stop-color="#a68063"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="600" fill="#f8f7f4"/>
+
+  <!-- Technical Header -->
+  <text x="40" y="50" font-family="'Courier New', monospace" font-size="11" fill="#7d7a72" letter-spacing="2">PROJECT 04 // BIOCLIMATIC COURTYARD SECTION</text>
+  <text x="760" y="50" font-family="'Courier New', monospace" font-size="11" fill="#7d7a72" text-anchor="end" letter-spacing="1">ALENTEJO ARID ZONE // 38°01'22"N 7°52'10"W</text>
+  <line x1="40" y1="65" x2="760" y2="65" stroke="#d5d2c8" stroke-width="1"/>
+
+  <g transform="translate(400, 310)">
+    <!-- Natural Ground Profile -->
+    <path d="M -350,140 Q -100,135 150,140 T 350,145" fill="none" stroke="#252422" stroke-width="2"/>
+
+    <!-- Solar Rays (Summer Solstice 72° vs Winter 26°) -->
+    <g stroke="#d99b26" stroke-width="1" stroke-dasharray="3,3" opacity="0.8">
+      <line x1="-280" y1="-220" x2="-60" y2="60"/>
+      <line x1="-240" y1="-220" x2="-20" y2="60"/>
+      <text x="-260" y="-230" font-family="'Courier New', monospace" font-size="9" fill="#b07a16">SUMMER NOON SOLAR CUTOFF (72°)</text>
+    </g>
+
+    <!-- Thick Monolithic Rammed Earth Walls -->
+    <!-- Left Wing Solid Wall (50cm depth) -->
+    <rect x="-300" y="-40" width="80" height="180" fill="url(#earth-layers)" stroke="#252422" stroke-width="2"/>
+    <text x="-260" y="40" font-family="'Courier New', monospace" font-size="9" fill="#4a3627" transform="rotate(-90 -260 40)" text-anchor="middle">500mm RAMMED EARTH</text>
+
+    <!-- Right Wing Solid Wall -->
+    <rect x="220" y="-40" width="80" height="180" fill="url(#earth-layers)" stroke="#252422" stroke-width="2"/>
+
+    <!-- Central Shaded Courtyard -->
+    <!-- Water Basin / Evaporative Cooling Pool -->
+    <rect x="-60" y="125" width="120" height="15" fill="#5c8294" stroke="#252422" stroke-width="1.5"/>
+    <text x="0" y="136" font-family="'Courier New', monospace" font-size="8" fill="#ffffff" text-anchor="middle">REFLECTING RAINWATER BASIN</text>
+
+    <!-- Cantilevered Corten Steel Roof Brow -->
+    <polygon points="-320,-60 10,-60 -20,-40 -300,-40" fill="#844528" stroke="#252422" stroke-width="1.5"/>
+    <polygon points="320,-60 80,-60 100,-40 300,-40" fill="#844528" stroke="#252422" stroke-width="1.5"/>
+
+    <!-- Stack Effect Airflow (Blue convection arrows) -->
+    <g stroke="#3a6073" stroke-width="1.5" fill="none">
+      <path d="M 0,110 C 0,50 -20,10 -20,-80" stroke-dasharray="3,3"/>
+      <polygon points="-20,-85 -24,-75 -16,-75" fill="#3a6073"/>
+      <text x="-35" y="-10" font-family="'Courier New', monospace" font-size="8.5" fill="#3a6073" text-anchor="end">CONVECTIVE CHIMNEY AIR-DRAFT</text>
+    </g>
+
+    <!-- Living Spaces Framing the Void -->
+    <rect x="-220" y="0" width="130" height="140" fill="#f0ece1" stroke="#252422" stroke-width="1.5"/>
+    <rect x="90" y="0" width="130" height="140" fill="#f0ece1" stroke="#252422" stroke-width="1.5"/>
+
+    <!-- Large Recessed Timber Pivot Doors -->
+    <line x1="-120" y1="0" x2="-120" y2="140" stroke="#8c6a50" stroke-width="3"/>
+    <line x1="120" y1="0" x2="120" y2="140" stroke="#8c6a50" stroke-width="3"/>
+
+    <!-- Human Scale Figure in Courtyard -->
+    <g stroke="#181816" stroke-width="1" fill="#181816">
+      <circle cx="-15" cy="85" r="3"/><line x1="-15" y1="88" x2="-15" y2="112"/><line x1="-15" y1="112" x2="-18" y2="125"/><line x1="-15" y1="112" x2="-12" y2="125"/>
+    </g>
+
+    <!-- Solitary Desert Olive Tree in Courtyard -->
+    <path d="M 50,125 Q 52,90 60,70 Q 56,50 62,35" stroke="#4a3627" stroke-width="3" fill="none"/>
+    <circle cx="62" cy="30" r="14" fill="#69755e" opacity="0.8"/>
+    <circle cx="72" cy="22" r="10" fill="#7d8c70" opacity="0.8"/>
+  </g>
+
+  <!-- Technical Spec Footer -->
+  <text x="40" y="560" font-family="'Courier New', monospace" font-size="10" fill="#99958c">THERMAL INERTIA LAG: 11.4 HOURS</text>
+  <text x="760" y="560" font-family="'Courier New', monospace" font-size="10" fill="#99958c" text-anchor="end">ZERO MECHANICAL HVAC RELIANCE</text>
+</svg>

@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <pattern id="brick-texture" width="16" height="8" patternUnits="userSpaceOnUse">
+      <rect width="16" height="8" fill="#e8dfd8"/>
+      <path d="M 0 0 L 16 0 M 0 4 L 16 4 M 0 8 L 16 8 M 8 0 L 8 4 M 0 4 L 0 8 M 16 4 L 16 8" stroke="#d4c6bd" stroke-width="0.5"/>
+    </pattern>
+  </defs>
+
+  <rect width="800" height="600" fill="#f8f7f4"/>
+
+  <!-- Header -->
+  <text x="40" y="50" font-family="'Courier New', monospace" font-size="11" fill="#7d7a72" letter-spacing="2">PROJECT 03 // ADAPTIVE REUSE SECTION & INSERTION</text>
+  <text x="760" y="50" font-family="'Courier New', monospace" font-size="11" fill="#7d7a72" text-anchor="end" letter-spacing="1">MANCHESTER FOUNDRY // 53°28'40"N 2°14'24"W</text>
+  <line x1="40" y1="65" x2="760" y2="65" stroke="#d5d2c8" stroke-width="1"/>
+
+  <g transform="translate(400, 310)">
+    <!-- Existing Victorian Brick Shell (Retained) -->
+    <!-- Left Brick Wall -->
+    <rect x="-320" y="-120" width="60" height="260" fill="url(#brick-texture)" stroke="#252422" stroke-width="2"/>
+    <!-- Right Brick Wall -->
+    <rect x="260" y="-120" width="60" height="260" fill="url(#brick-texture)" stroke="#252422" stroke-width="2"/>
+
+    <!-- Ground Level -->
+    <line x1="-350" y1="140" x2="350" y2="140" stroke="#252422" stroke-width="2.5"/>
+
+    <!-- Historic Cast Iron Roof Truss -->
+    <g stroke="#3a3835" stroke-width="2" fill="none">
+      <path d="M -320,-120 L 0,-210 L 320,-120"/>
+      <!-- Lower Chord Tie -->
+      <line x1="-320" y1="-120" x2="320" y2="-120"/>
+      <!-- Web Members -->
+      <line x1="-240" y1="-120" x2="-160" y2="-165"/>
+      <line x1="-160" y1="-120" x2="-160" y2="-165"/>
+      <line x1="-160" y1="-165" x2="-80" y2="-120"/>
+      <line x1="-80" y1="-120" x2="0" y2="-210"/>
+      <line x1="0" y1="-120" x2="0" y2="-210"/>
+      <line x1="80" y1="-120" x2="0" y2="-210"/>
+      <line x1="160" y1="-165" x2="80" y2="-120"/>
+      <line x1="160" y1="-120" x2="160" y2="-165"/>
+      <line x1="240" y1="-120" x2="160" y2="-165"/>
+    </g>
+
+    <!-- Translucent Polycarbonate Skylight Monitor -->
+    <polygon points="-80,-210 0,-240 80,-210 80,-200 -80,-200" fill="#f0f4f8" stroke="#3a6073" stroke-width="1.5"/>
+    <text x="0" y="-220" font-family="'Courier New', monospace" font-size="8" fill="#3a6073" text-anchor="middle">SOLAR SKYLIGHT APERTURE</text>
+
+    <!-- New Timber Pod Insertion (Building within a Building) -->
+    <g transform="translate(-80, 20)">
+      <!-- Mezzanine Timber Box -->
+      <rect x="-100" y="-80" width="160" height="100" fill="#ded5c4" stroke="#8c6a50" stroke-width="2"/>
+      <rect x="-90" y="-70" width="60" height="80" fill="#faf7f2" stroke="#8c6a50" stroke-width="1.2"/>
+      <rect x="-10" y="-70" width="60" height="80" fill="#faf7f2" stroke="#8c6a50" stroke-width="1.2"/>
+      <line x1="-100" y1="20" x2="60" y2="20" stroke="#8c6a50" stroke-width="3"/>
+      <!-- Timber Columns -->
+      <line x1="-90" y1="20" x2="-90" y2="120" stroke="#8c6a50" stroke-width="3"/>
+      <line x1="50" y1="20" x2="50" y2="120" stroke="#8c6a50" stroke-width="3"/>
+      <text x="-20" y="-25" font-family="'Courier New', monospace" font-size="9" fill="#5c4533" text-anchor="middle">COMMUNITY MAKER LAB</text>
+    </g>
+
+    <!-- Public Nave (Open Unprogrammed Commons) -->
+    <g transform="translate(130, 70)">
+      <!-- Community Long Table -->
+      <rect x="-40" y="20" width="90" height="20" fill="#c4baa7" stroke="#252422" stroke-width="1"/>
+      <line x1="-30" y1="40" x2="-30" y2="70" stroke="#252422" stroke-width="2"/>
+      <line x1="40" y1="40" x2="40" y2="70" stroke="#252422" stroke-width="2"/>
+      <text x="5" y="15" font-family="'Courier New', monospace" font-size="9" fill="#666" text-anchor="middle">CIVIC BANQUET / COMMONS</text>
+
+      <!-- Indoor Planters / Phytoremediation Wetland -->
+      <rect x="70" y="30" width="45" height="40" fill="#5b6e58" opacity="0.8"/>
+      <circle cx="80" cy="15" r="10" fill="#6c8369"/>
+      <circle cx="95" cy="10" r="12" fill="#7d987a"/>
+    </g>
+
+    <!-- Historic Arch Openings in Masonry -->
+    <path d="M -320,60 A 25,35 0 0,1 -320,-10 L -320,60" fill="#f8f7f4" stroke="#252422" stroke-width="1.5"/>
+    <path d="M 260,60 A 25,35 0 0,1 260,-10 L 260,60" fill="#f8f7f4" stroke="#252422" stroke-width="1.5"/>
+
+    <!-- People Scale -->
+    <g stroke="#181816" stroke-width="1" fill="#181816">
+      <circle cx="100" cy="95" r="2.5"/><line x1="100" y1="98" x2="100" y2="118"/><line x1="100" y1="118" x2="96" y2="140"/><line x1="100" y1="118" x2="104" y2="140"/>
+      <circle cx="125" cy="98" r="2.5"/><line x1="125" y1="101" x2="125" y2="120"/><line x1="125" y1="120" x2="122" y2="140"/><line x1="125" y1="120" x2="128" y2="140"/>
+    </g>
+
+    <!-- Callout line -->
+    <line x1="-120" y1="-140" x2="-200" y2="-180" stroke="#a44a3f" stroke-width="1" stroke-dasharray="2,2"/>
+    <text x="-210" y="-185" font-family="'Courier New', monospace" font-size="8.5" fill="#a44a3f" text-anchor="end">RETAINED 1888 RIVETED IRON TRUSS</text>
+  </g>
+
+  <!-- Technical Spec Footer -->
+  <text x="40" y="560" font-family="'Courier New', monospace" font-size="10" fill="#99958c">RETENTION RATE: 88% HISTORIC FABRIC</text>
+  <text x="760" y="560" font-family="'Courier New', monospace" font-size="10" fill="#99958c" text-anchor="end">INTERNAL GFA: 12,200 m²</text>
+</svg>

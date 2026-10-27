@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <pattern id="grid-pattern" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#e4e2dc" stroke-width="0.5"/>
+    </pattern>
+    <linearGradient id="warm-wood" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#dfd9cd"/>
+      <stop offset="100%" stop-color="#cfc7b7"/>
+    </linearGradient>
+    <linearGradient id="shadow-gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#181816" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#181816" stop-opacity="0.0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="600" fill="#f8f7f4"/>
+  <rect width="800" height="600" fill="url(#grid-pattern)"/>
+
+  <!-- Architectural Title & Coordinate Stamp -->
+  <text x="40" y="50" font-family="'Courier New', monospace" font-size="11" fill="#7d7a72" letter-spacing="2">PROJECT 01 // AXONOMETRIC POROSITY MATRIX</text>
+  <text x="760" y="50" font-family="'Courier New', monospace" font-size="11" fill="#7d7a72" text-anchor="end" letter-spacing="1">51°55'18"N 4°28'52"E</text>
+  <line x1="40" y1="65" x2="760" y2="65" stroke="#d5d2c8" stroke-width="1"/>
+
+  <!-- Ground Plane Isometric Grid -->
+  <g transform="translate(400, 320) scale(1.1)">
+    <!-- Base Plinth -->
+    <polygon points="0,-160 260,-10 0,140 -260,-10" fill="#edeae1" stroke="#252422" stroke-width="1.5"/>
+
+    <!-- Cast Shadows -->
+    <polygon points="-80,80 180,140 220,110 -40,50" fill="url(#shadow-gradient)"/>
+    <polygon points="0,0 120,60 160,-20 40,-80" fill="#ded9cc" opacity="0.6"/>
+
+    <!-- Massing Block A (Left Wing - CLT Timber) -->
+    <g>
+      <!-- Left Face -->
+      <polygon points="-180,-30 -80,-80 -80,-200 -180,-150" fill="#d8d1c1" stroke="#252422" stroke-width="1.2"/>
+      <!-- Right Face -->
+      <polygon points="-80,-80 20,-20 20,-140 -80,-200" fill="#ebe6d9" stroke="#252422" stroke-width="1.2"/>
+      <!-- Roof Face -->
+      <polygon points="-180,-150 -80,-200 20,-140 -80,-90" fill="#f4f1e8" stroke="#252422" stroke-width="1.2"/>
+
+      <!-- Window Apertures -->
+      <line x1="-150" y1="-50" x2="-110" y2="-70" stroke="#8c6a50" stroke-width="2"/>
+      <line x1="-150" y1="-80" x2="-110" y2="-100" stroke="#8c6a50" stroke-width="2"/>
+      <line x1="-150" y1="-110" x2="-110" y2="-130" stroke="#8c6a50" stroke-width="2"/>
+      
+      <line x1="-50" y1="-65" x2="-10" y2="-40" stroke="#8c6a50" stroke-width="2"/>
+      <line x1="-50" y1="-95" x2="-10" y2="-70" stroke="#8c6a50" stroke-width="2"/>
+      <line x1="-50" y1="-125" x2="-10" y2="-100" stroke="#8c6a50" stroke-width="2"/>
+    </g>
+
+    <!-- Porous Colonade & Ground Arches -->
+    <g stroke="#252422" stroke-width="1.2" fill="none">
+      <path d="M -160,-15 A 15,20 0 0,1 -130,-30"/>
+      <path d="M -120,-35 A 15,20 0 0,1 -90,-50"/>
+      <path d="M -80,-55 A 15,20 0 0,1 -50,-70"/>
+    </g>
+
+    <!-- Massing Block B (Rear Tiered Courtyard) -->
+    <g>
+      <polygon points="-40,-180 80,-240 180,-180 60,-120" fill="#eeeae0" stroke="#252422" stroke-width="1.2"/>
+      <polygon points="60,-120 180,-180 180,-70 60,-10" fill="#ded7c7" stroke="#252422" stroke-width="1.2"/>
+      <polygon points="-40,-180 60,-120 60,-10 -40,-70" fill="#e5dfd2" stroke="#252422" stroke-width="1.2"/>
+    </g>
+
+    <!-- Massing Block C (East Stepped Terrace) -->
+    <g>
+      <polygon points="40,30 180,-40 180,60 40,130" fill="#ded7c7" stroke="#252422" stroke-width="1.2"/>
+      <polygon points="40,30 -20,0 -20,100 40,130" fill="#cbc4b3" stroke="#252422" stroke-width="1.2"/>
+      <polygon points="-20,0 120,-70 180,-40 40,30" fill="#faf8f2" stroke="#252422" stroke-width="1.2"/>
+    </g>
+
+    <!-- Central Courtyard Tree & Micro-Ecology -->
+    <circle cx="0" cy="-10" r="14" fill="#606c5a" opacity="0.85"/>
+    <circle cx="16" cy="-22" r="11" fill="#74836d" opacity="0.85"/>
+    <circle cx="-14" cy="-25" r="10" fill="#525d4d" opacity="0.85"/>
+    <line x1="0" y1="-10" x2="0" y2="10" stroke="#252422" stroke-width="1.5"/>
+
+    <!-- Scaled Human Figures (Architectural Silhouette) -->
+    <g stroke="#181816" stroke-width="1" fill="#181816">
+      <!-- Person 1 walking -->
+      <circle cx="-60" cy="50" r="2"/>
+      <line x1="-60" y1="52" x2="-60" y2="62"/>
+      <line x1="-60" y1="62" x2="-64" y2="70"/>
+      <line x1="-60" y1="62" x2="-56" y2="70"/>
+
+      <!-- Person 2 sitting -->
+      <circle cx="80" cy="80" r="2"/>
+      <line x1="80" y1="82" x2="80" y2="90"/>
+      <line x1="80" y1="90" x2="86" y2="92"/>
+    </g>
+
+    <!-- Dimension & Circulation Vector Indicators -->
+    <g stroke="#a44a3f" stroke-width="1" stroke-dasharray="3,3">
+      <path d="M -180,10 L 0,110 L 180,20"/>
+      <text x="0" y="125" font-family="'Courier New', monospace" font-size="9" fill="#a44a3f" text-anchor="middle">PEDESTRIAN POROSITY AXIS (N-S)</text>
+    </g>
+  </g>
+
+  <!-- Spec Footer -->
+  <text x="40" y="560" font-family="'Courier New', monospace" font-size="10" fill="#99958c">CLT TIMBER STRUCTURAL MODULE: 4.80m × 4.80m</text>
+  <text x="760" y="560" font-family="'Courier New', monospace" font-size="10" fill="#99958c" text-anchor="end">EMBODIED CARBON: 280 kg CO₂e/m²</text>
+</svg>
